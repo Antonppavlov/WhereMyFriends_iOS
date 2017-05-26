@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		12F7B6B51ED75A0400B877A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */; };
-		12F7B6B71ED75A0400B877A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B61ED75A0400B877A0 /* ViewController.swift */; };
+		12F7B6B71ED75A0400B877A0 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B61ED75A0400B877A0 /* MainController.swift */; };
 		12F7B6BA1ED75A0400B877A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F7B6B81ED75A0400B877A0 /* Main.storyboard */; };
 		12F7B6BC1ED75A0400B877A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F7B6BB1ED75A0400B877A0 /* Assets.xcassets */; };
 		12F7B6BF1ED75A0400B877A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F7B6BD1ED75A0400B877A0 /* LaunchScreen.storyboard */; };
+		12F7B6C81ED75CE000B877A0 /* WelcomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6C71ED75CE000B877A0 /* WelcomController.swift */; };
+		12F7B6CA1ED75E3F00B877A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6C91ED75E3F00B877A0 /* User.swift */; };
+		12F7B6CE1ED76AC300B877A0 /* LoginStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6CD1ED76AC300B877A0 /* LoginStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12F7B6B11ED75A0400B877A0 /* WhereMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12F7B6B61ED75A0400B877A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12F7B6B61ED75A0400B877A0 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		12F7B6B91ED75A0400B877A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12F7B6BB1ED75A0400B877A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12F7B6BE1ED75A0400B877A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12F7B6C01ED75A0400B877A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F7B6C71ED75CE000B877A0 /* WelcomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomController.swift; sourceTree = "<group>"; };
+		12F7B6C91ED75E3F00B877A0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		12F7B6CD1ED76AC300B877A0 /* LoginStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		12F7B6B31ED75A0400B877A0 /* WhereMyFriends */ = {
 			isa = PBXGroup;
 			children = (
+				12F7B6C61ED75A4600B877A0 /* Classes */,
 				12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */,
-				12F7B6B61ED75A0400B877A0 /* ViewController.swift */,
 				12F7B6B81ED75A0400B877A0 /* Main.storyboard */,
 				12F7B6BB1ED75A0400B877A0 /* Assets.xcassets */,
 				12F7B6BD1ED75A0400B877A0 /* LaunchScreen.storyboard */,
 				12F7B6C01ED75A0400B877A0 /* Info.plist */,
 			);
 			path = WhereMyFriends;
+			sourceTree = "<group>";
+		};
+		12F7B6C61ED75A4600B877A0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12F7B6CC1ED76A9800B877A0 /* Utils */,
+				12F7B6CB1ED7616F00B877A0 /* Entities */,
+				12F7B6B61ED75A0400B877A0 /* MainController.swift */,
+				12F7B6C71ED75CE000B877A0 /* WelcomController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		12F7B6CB1ED7616F00B877A0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				12F7B6C91ED75E3F00B877A0 /* User.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		12F7B6CC1ED76A9800B877A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				12F7B6CD1ED76AC300B877A0 /* LoginStorage.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F7B6B71ED75A0400B877A0 /* ViewController.swift in Sources */,
+				12F7B6CA1ED75E3F00B877A0 /* User.swift in Sources */,
+				12F7B6CE1ED76AC300B877A0 /* LoginStorage.swift in Sources */,
+				12F7B6C81ED75CE000B877A0 /* WelcomController.swift in Sources */,
+				12F7B6B71ED75A0400B877A0 /* MainController.swift in Sources */,
 				12F7B6B51ED75A0400B877A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
