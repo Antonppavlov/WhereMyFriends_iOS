@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9F63D1ED834B500BB4902 /* SMSViewController.swift */; };
+		12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */; };
 		12F7B6B51ED75A0400B877A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */; };
 		12F7B6B71ED75A0400B877A0 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B61ED75A0400B877A0 /* MainController.swift */; };
 		12F7B6BA1ED75A0400B877A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F7B6B81ED75A0400B877A0 /* Main.storyboard */; };
@@ -15,9 +17,12 @@
 		12F7B6C81ED75CE000B877A0 /* WelcomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6C71ED75CE000B877A0 /* WelcomController.swift */; };
 		12F7B6CA1ED75E3F00B877A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6C91ED75E3F00B877A0 /* User.swift */; };
 		12F7B6CE1ED76AC300B877A0 /* LoginStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6CD1ED76AC300B877A0 /* LoginStorage.swift */; };
+		F475D383DBD78A0A16B2FCBB /* Pods_WhereMyFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E175310B6E8EEE95EFCF85EE /* Pods_WhereMyFriends.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12C9F63D1ED834B500BB4902 /* SMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSViewController.swift; sourceTree = "<group>"; };
+		12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12F7B6B11ED75A0400B877A0 /* WhereMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F7B6B61ED75A0400B877A0 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,9 @@
 		12F7B6C71ED75CE000B877A0 /* WelcomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomController.swift; sourceTree = "<group>"; };
 		12F7B6C91ED75E3F00B877A0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12F7B6CD1ED76AC300B877A0 /* LoginStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStorage.swift; sourceTree = "<group>"; };
+		C3814FD2773EBCF008D14051 /* Pods-WhereMyFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereMyFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereMyFriends/Pods-WhereMyFriends.release.xcconfig"; sourceTree = "<group>"; };
+		E175310B6E8EEE95EFCF85EE /* Pods_WhereMyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereMyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95707286943335D3A2ED53C /* Pods-WhereMyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereMyFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereMyFriends/Pods-WhereMyFriends.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F475D383DBD78A0A16B2FCBB /* Pods_WhereMyFriends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1085C3781B2DF75C7B4E3506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F95707286943335D3A2ED53C /* Pods-WhereMyFriends.debug.xcconfig */,
+				C3814FD2773EBCF008D14051 /* Pods-WhereMyFriends.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		12C9F63C1ED8348A00BB4902 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12F7B6B61ED75A0400B877A0 /* MainController.swift */,
+				12F7B6C71ED75CE000B877A0 /* WelcomController.swift */,
+				12C9F63D1ED834B500BB4902 /* SMSViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		12F7B6A81ED75A0400B877A0 = {
 			isa = PBXGroup;
 			children = (
 				12F7B6B31ED75A0400B877A0 /* WhereMyFriends */,
 				12F7B6B21ED75A0400B877A0 /* Products */,
+				1085C3781B2DF75C7B4E3506 /* Pods */,
+				7E2279A17CC4DB0FFDAFB176 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +96,7 @@
 				12F7B6BB1ED75A0400B877A0 /* Assets.xcassets */,
 				12F7B6BD1ED75A0400B877A0 /* LaunchScreen.storyboard */,
 				12F7B6C01ED75A0400B877A0 /* Info.plist */,
+				12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */,
 			);
 			path = WhereMyFriends;
 			sourceTree = "<group>";
@@ -73,10 +104,9 @@
 		12F7B6C61ED75A4600B877A0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				12C9F63C1ED8348A00BB4902 /* Controller */,
 				12F7B6CC1ED76A9800B877A0 /* Utils */,
 				12F7B6CB1ED7616F00B877A0 /* Entities */,
-				12F7B6B61ED75A0400B877A0 /* MainController.swift */,
-				12F7B6C71ED75CE000B877A0 /* WelcomController.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -97,6 +127,14 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		7E2279A17CC4DB0FFDAFB176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E175310B6E8EEE95EFCF85EE /* Pods_WhereMyFriends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F7B6C31ED75A0400B877A0 /* Build configuration list for PBXNativeTarget "WhereMyFriends" */;
 			buildPhases = (
+				6532B50C124928C60A4B4C8D /* [CP] Check Pods Manifest.lock */,
 				12F7B6AD1ED75A0400B877A0 /* Sources */,
 				12F7B6AE1ED75A0400B877A0 /* Frameworks */,
 				12F7B6AF1ED75A0400B877A0 /* Resources */,
+				16849A82AC18C0F04C56F4AA /* [CP] Embed Pods Frameworks */,
+				7EE75233295CFED0A1146C3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,12 +199,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F7B6BF1ED75A0400B877A0 /* LaunchScreen.storyboard in Resources */,
+				12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */,
 				12F7B6BC1ED75A0400B877A0 /* Assets.xcassets in Resources */,
 				12F7B6BA1ED75A0400B877A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16849A82AC18C0F04C56F4AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereMyFriends/Pods-WhereMyFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6532B50C124928C60A4B4C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7EE75233295CFED0A1146C3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereMyFriends/Pods-WhereMyFriends-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12F7B6AD1ED75A0400B877A0 /* Sources */ = {
@@ -172,6 +262,7 @@
 			files = (
 				12F7B6CA1ED75E3F00B877A0 /* User.swift in Sources */,
 				12F7B6CE1ED76AC300B877A0 /* LoginStorage.swift in Sources */,
+				12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */,
 				12F7B6C81ED75CE000B877A0 /* WelcomController.swift in Sources */,
 				12F7B6B71ED75A0400B877A0 /* MainController.swift in Sources */,
 				12F7B6B51ED75A0400B877A0 /* AppDelegate.swift in Sources */,
@@ -297,6 +388,7 @@
 		};
 		12F7B6C41ED75A0400B877A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95707286943335D3A2ED53C /* Pods-WhereMyFriends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76ZQSY64Q;
@@ -310,6 +402,7 @@
 		};
 		12F7B6C51ED75A0400B877A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3814FD2773EBCF008D14051 /* Pods-WhereMyFriends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76ZQSY64Q;
@@ -340,6 +433,7 @@
 				12F7B6C51ED75A0400B877A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

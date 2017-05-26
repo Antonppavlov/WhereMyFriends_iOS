@@ -38,6 +38,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Go to hell!</string>
+	<string>Разрешите доступ к вашему местоположению</string>
 </dict>
 </plist>
