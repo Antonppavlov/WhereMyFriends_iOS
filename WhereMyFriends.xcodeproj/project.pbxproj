@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		129209741EE0ACD100F9CCE0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129209731EE0ACD100F9CCE0 /* Login.storyboard */; };
+		129209761EE0AE1A00F9CCE0 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129209751EE0AE1A00F9CCE0 /* ContactsViewController.swift */; };
 		12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9F63D1ED834B500BB4902 /* SMSViewController.swift */; };
 		12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */; };
 		12F7B6B51ED75A0400B877A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129209731EE0ACD100F9CCE0 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		129209751EE0AE1A00F9CCE0 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		12C9F63D1ED834B500BB4902 /* SMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSViewController.swift; sourceTree = "<group>"; };
 		12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12F7B6B11ED75A0400B877A0 /* WhereMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +69,7 @@
 				12F7B6B61ED75A0400B877A0 /* MainController.swift */,
 				12F7B6C71ED75CE000B877A0 /* WelcomController.swift */,
 				12C9F63D1ED834B500BB4902 /* SMSViewController.swift */,
+				129209751EE0AE1A00F9CCE0 /* ContactsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				12F7B6BD1ED75A0400B877A0 /* LaunchScreen.storyboard */,
 				12F7B6C01ED75A0400B877A0 /* Info.plist */,
 				12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */,
+				129209731EE0ACD100F9CCE0 /* Login.storyboard */,
 			);
 			path = WhereMyFriends;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				12F7B6BF1ED75A0400B877A0 /* LaunchScreen.storyboard in Resources */,
 				12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */,
 				12F7B6BC1ED75A0400B877A0 /* Assets.xcassets in Resources */,
+				129209741EE0ACD100F9CCE0 /* Login.storyboard in Resources */,
 				12F7B6BA1ED75A0400B877A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F7B6CA1ED75E3F00B877A0 /* User.swift in Sources */,
+				129209761EE0AE1A00F9CCE0 /* ContactsViewController.swift in Sources */,
 				12F7B6CE1ED76AC300B877A0 /* LoginStorage.swift in Sources */,
 				12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */,
 				12F7B6C81ED75CE000B877A0 /* WelcomController.swift in Sources */,

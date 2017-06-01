@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="pCH-b3-bAw">
+            <objects>
+                <viewController storyboardIdentifier="MainController" id="UZ3-zb-dck" customClass="MainController" customModule="WhereMyFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cQx-JI-vCR"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ue-Sc-s8U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bjv-P6-EQb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icv-U1-8nN">
+                                <rect key="frame" x="36" y="40" width="303" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-0O-ghM">
+                                <rect key="frame" x="36" y="86.5" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-8v-rPl">
+                                <rect key="frame" x="36" y="136.5" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zc-Hz-NR6">
+                                <rect key="frame" x="294" y="186.5" width="45" height="30"/>
+                                <state key="normal" title="Далее"/>
+                                <connections>
+                                    <segue destination="Zxy-Om-WFY" kind="show" id="DBT-RJ-9Zd">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hpD-8v-rPl" secondAttribute="trailing" constant="20" id="2RV-XE-IBF"/>
+                            <constraint firstItem="qqH-0O-ghM" firstAttribute="leading" secondItem="Bjv-P6-EQb" secondAttribute="leadingMargin" constant="20" id="781-Tw-MIC"/>
+                            <constraint firstItem="Icv-U1-8nN" firstAttribute="top" secondItem="cQx-JI-vCR" secondAttribute="bottom" constant="20" id="L4t-G6-Z6B"/>
+                            <constraint firstItem="hpD-8v-rPl" firstAttribute="leading" secondItem="Bjv-P6-EQb" secondAttribute="leadingMargin" constant="20" id="S2q-RU-YJr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Icv-U1-8nN" secondAttribute="trailing" constant="20" id="SV9-wC-JL5"/>
+                            <constraint firstItem="qqH-0O-ghM" firstAttribute="top" secondItem="Icv-U1-8nN" secondAttribute="bottom" constant="20" id="Ywj-Rd-L2U"/>
+                            <constraint firstItem="4Zc-Hz-NR6" firstAttribute="top" secondItem="hpD-8v-rPl" secondAttribute="bottom" constant="20" id="dbN-jy-hx7"/>
+                            <constraint firstItem="Icv-U1-8nN" firstAttribute="leading" secondItem="Bjv-P6-EQb" secondAttribute="leadingMargin" constant="20" id="e6e-gI-LXK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qqH-0O-ghM" secondAttribute="trailing" constant="20" id="ezZ-MP-hXv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Zc-Hz-NR6" secondAttribute="trailing" constant="20" id="sCU-KJ-MJ4"/>
+                            <constraint firstItem="hpD-8v-rPl" firstAttribute="top" secondItem="qqH-0O-ghM" secondAttribute="bottom" constant="20" id="wgI-5I-JLm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputLogin" destination="qqH-0O-ghM" id="Cdf-vx-TkI"/>
+                        <outlet property="inputPassword" destination="hpD-8v-rPl" id="VKO-pD-alU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TnN-OV-hYw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1097" y="357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="srn-Ul-GKr">
+            <objects>
+                <viewController id="Zxy-Om-WFY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gsu-yi-Rsi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cgc-89-4s0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fBZ-mD-ckt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подтверждение номера телефона:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py2-cZ-eAV">
+                                <rect key="frame" x="20" y="40" width="319" height="51.5"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам на номер был отправлен sms код" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVM-zz-UOI">
+                                <rect key="frame" x="36" y="111.5" width="319" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sms" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-v1-WJ5">
+                                <rect key="frame" x="36" y="152.5" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-vu-nY9">
+                                <rect key="frame" x="245" y="202.5" width="94" height="30"/>
+                                <state key="normal" title="Подтвердить"/>
+                                <connections>
+                                    <segue destination="ZwM-Ka-GsY" kind="show" id="F9k-cy-p0z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnz-fZ-Mf9">
+                                <rect key="frame" x="36" y="202.5" width="71" height="30"/>
+                                <state key="normal" title="Изменить"/>
+                                <connections>
+                                    <segue destination="UZ3-zb-dck" kind="show" id="99d-fH-iJY">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xnz-fZ-Mf9" firstAttribute="top" secondItem="bpG-v1-WJ5" secondAttribute="bottom" constant="20" id="BvH-1f-4hV"/>
+                            <constraint firstItem="MjI-vu-nY9" firstAttribute="top" secondItem="bpG-v1-WJ5" secondAttribute="bottom" constant="20" id="DYA-aQ-Yfe"/>
+                            <constraint firstItem="py2-cZ-eAV" firstAttribute="top" secondItem="gsu-yi-Rsi" secondAttribute="bottom" constant="20" id="G8r-VG-ZFc"/>
+                            <constraint firstItem="xnz-fZ-Mf9" firstAttribute="leading" secondItem="fBZ-mD-ckt" secondAttribute="leadingMargin" constant="20" id="HI7-8g-Mq1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bpG-v1-WJ5" secondAttribute="trailing" constant="20" id="KBF-jU-8mC"/>
+                            <constraint firstItem="bpG-v1-WJ5" firstAttribute="top" secondItem="qVM-zz-UOI" secondAttribute="bottom" constant="20" id="NCe-n6-faO"/>
+                            <constraint firstAttribute="trailing" secondItem="qVM-zz-UOI" secondAttribute="trailing" constant="20" id="Ovk-6H-3Jt"/>
+                            <constraint firstItem="qVM-zz-UOI" firstAttribute="top" secondItem="py2-cZ-eAV" secondAttribute="bottom" constant="20" id="QlF-7n-bDT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MjI-vu-nY9" secondAttribute="trailing" constant="20" id="ZCX-TC-GC2"/>
+                            <constraint firstItem="bpG-v1-WJ5" firstAttribute="leading" secondItem="fBZ-mD-ckt" secondAttribute="leadingMargin" constant="20" id="ejF-bq-VU0"/>
+                            <constraint firstItem="py2-cZ-eAV" firstAttribute="leading" secondItem="fBZ-mD-ckt" secondAttribute="leading" constant="20" id="hIK-yd-YHM"/>
+                            <constraint firstItem="qVM-zz-UOI" firstAttribute="leading" secondItem="fBZ-mD-ckt" secondAttribute="leadingMargin" constant="20" id="lmj-MU-cKR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="py2-cZ-eAV" secondAttribute="trailing" constant="20" id="uo2-8e-qoY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qV-2m-Go5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="357"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="QHP-Sm-yP3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="ZwM-Ka-GsY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2c-gn-tvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="350"/>
+        </scene>
+    </scenes>
+</document>
