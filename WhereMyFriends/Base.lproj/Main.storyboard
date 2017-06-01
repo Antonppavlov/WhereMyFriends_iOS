@@ -109,6 +109,9 @@
                             </mapView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="utw-PY-88O">
                                 <rect key="frame" x="235" y="153" width="51" height="31"/>
+                                <connections>
+                                    <action selector="didSwitchedGPS:" destination="hjm-dB-HAR" eventType="valueChanged" id="lKv-HQ-ilR"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
