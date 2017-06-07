@@ -11,6 +11,8 @@ import Foundation
 class LoginStorage {
     static let loginKey = "login"
     static let phoneKey = "phone"
+    static let photoKey = "photo"
+    
     
     func fetchLogin() -> String? {
         return UserDefaults.standard.string(forKey: LoginStorage.loginKey)
@@ -20,12 +22,21 @@ class LoginStorage {
         return UserDefaults.standard.string(forKey: LoginStorage.phoneKey)
     }
     
+    func fetchPhoto() -> String? {
+        return UserDefaults.standard.string(forKey: LoginStorage.photoKey)
+    }
+    
+    
     func save(login: String) {
         UserDefaults.standard.set(login, forKey: LoginStorage.loginKey)
     }
     
     func save(phone: String) {
         UserDefaults.standard.set(phone, forKey: LoginStorage.phoneKey)
+    }
+    
+    func save(photo: String) {
+        UserDefaults.standard.set(photo, forKey: LoginStorage.photoKey)
     }
     
     
@@ -35,5 +46,9 @@ class LoginStorage {
     
     func isPhoneExist() -> Bool {
         return self.fetchPhone() != nil
+    }
+    
+    func isPhotoExist() -> Bool {
+        return self.fetchPhoto() != nil
     }
 }

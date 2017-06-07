@@ -13,13 +13,9 @@ class SMSViewController: UIViewController {
     
     let storage = LoginStorage()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if let login = storage.fetchLogin(), let phone = storage.fetchPhone() {
-//            
-//                    }
-               }
+    }
 }
 
- 
+

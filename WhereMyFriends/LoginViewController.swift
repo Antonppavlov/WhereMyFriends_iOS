@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class MainController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var inputLogin: UITextField!
     @IBOutlet weak var inputPassword: UITextField!
@@ -26,11 +26,8 @@ class MainController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let dest = segue.destination as! WelcomController
         storage.save(login: inputLogin.text!)
         storage.save(phone: inputPassword.text!)
-//        dest.user.name = inputLogin.text
-//        dest.user.phone = inputPassword.text
     }
 
 }
