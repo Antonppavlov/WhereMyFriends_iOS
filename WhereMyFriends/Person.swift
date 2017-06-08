@@ -21,15 +21,14 @@ class Persone {
     
     init(snapshot: DataSnapshot) {
         let value = snapshot.value as? NSDictionary
-        print(snapshot)
+       // print(snapshot)
         self.name = value?["name"] as? String
         self.phone = value?["phone"] as? String
-         self.photo = value?["photo"] as? String
+        self.photo = value?["photo"] as? String
         self.dateString = value?["dateString"] as? String
         self.latitude = value?["latitude"] as? Double
         self.longitude = value?["longitude"] as? Double
 
         ref = snapshot.ref
-        
     }
 }

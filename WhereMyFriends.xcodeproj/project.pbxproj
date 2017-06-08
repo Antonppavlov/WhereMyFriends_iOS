@@ -11,6 +11,9 @@
 		12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9F63D1ED834B500BB4902 /* SMSViewController.swift */; };
 		12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */; };
 		12D2F42F1EE85C3200207311 /* ContTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F42E1EE85C3200207311 /* ContTableViewController.swift */; };
+		12D2F4311EE9419300207311 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F4301EE9419300207311 /* SettingsViewController.swift */; };
+		12D2F4351EE943DF00207311 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F4341EE943DF00207311 /* Contacts.swift */; };
+		12D2F4381EE984F500207311 /* CUAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F4371EE984F500207311 /* CUAnnotationView.swift */; };
 		12F7B6B51ED75A0400B877A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */; };
 		12F7B6B71ED75A0400B877A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B61ED75A0400B877A0 /* LoginViewController.swift */; };
 		12F7B6BA1ED75A0400B877A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F7B6B81ED75A0400B877A0 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 		12C9F63D1ED834B500BB4902 /* SMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSViewController.swift; sourceTree = "<group>"; };
 		12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12D2F42E1EE85C3200207311 /* ContTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContTableViewController.swift; sourceTree = "<group>"; };
+		12D2F4301EE9419300207311 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		12D2F4341EE943DF00207311 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		12D2F4371EE984F500207311 /* CUAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUAnnotationView.swift; sourceTree = "<group>"; };
 		12F7B6B11ED75A0400B877A0 /* WhereMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F7B6B61ED75A0400B877A0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 			children = (
 				12F7B6C71ED75CE000B877A0 /* MapViewController.swift */,
 				12D2F42E1EE85C3200207311 /* ContTableViewController.swift */,
+				12D2F4301EE9419300207311 /* SettingsViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -99,10 +106,27 @@
 		12C9F63C1ED8348A00BB4902 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				12D2F4361EE984E400207311 /* Custom */,
 				121E81521EE15B1600E06F5D /* Login */,
 				121E81511EE15B0400E06F5D /* Main */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		12D2F4321EE943B100207311 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12D2F4341EE943DF00207311 /* Contacts.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		12D2F4361EE984E400207311 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				12D2F4371EE984F500207311 /* CUAnnotationView.swift */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 		12F7B6A81ED75A0400B877A0 = {
@@ -139,6 +163,7 @@
 		12F7B6C61ED75A4600B877A0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				12D2F4321EE943B100207311 /* Model */,
 				12C9F63C1ED8348A00BB4902 /* Controller */,
 				12F7B6CC1ED76A9800B877A0 /* Utils */,
 				12F7B6CB1ED7616F00B877A0 /* Entities */,
@@ -300,8 +325,11 @@
 				12F7B6CA1ED75E3F00B877A0 /* Person.swift in Sources */,
 				12FCF13D1EE70FB100A4A530 /* Utils.swift in Sources */,
 				12D2F42F1EE85C3200207311 /* ContTableViewController.swift in Sources */,
+				12D2F4381EE984F500207311 /* CUAnnotationView.swift in Sources */,
+				12D2F4311EE9419300207311 /* SettingsViewController.swift in Sources */,
 				12F7B6CE1ED76AC300B877A0 /* LoginStorage.swift in Sources */,
 				12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */,
+				12D2F4351EE943DF00207311 /* Contacts.swift in Sources */,
 				12F7B6C81ED75CE000B877A0 /* MapViewController.swift in Sources */,
 				12F7B6B71ED75A0400B877A0 /* LoginViewController.swift in Sources */,
 				12FCF13F1EE765C900A4A530 /* AddPhotoViewController.swift in Sources */,

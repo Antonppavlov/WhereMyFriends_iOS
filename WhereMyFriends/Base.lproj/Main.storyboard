@@ -83,12 +83,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bQ-fb-Wct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="-143"/>
+            <point key="canvasLocation" x="1198" y="-53"/>
         </scene>
         <!--Cont View Controller-->
         <scene sceneID="Irp-Wl-vCz">
             <objects>
-                <tableViewController id="wda-vm-b4x" customClass="ContViewController" customModule="WhereMyFriends" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="wda-vm-b4x" customClass="ContViewController" customModule="WhereMyFriends" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="36" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xiw-4a-GpR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,12 +129,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvt-GP-XL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805.5999999999999" y="692.20389805097454"/>
+            <point key="canvasLocation" x="1198" y="691"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="3OP-26-jx5">
             <objects>
-                <viewController id="Qfv-9U-5Qm" sceneMemberID="viewController">
+                <viewController id="Qfv-9U-5Qm" customClass="SettingsViewController" customModule="WhereMyFriends" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XKZ-wF-Rzs"/>
                         <viewControllerLayoutGuide type="bottom" id="uUK-7d-sQh"/>
@@ -142,13 +142,76 @@
                     <view key="view" contentMode="scaleToFill" id="xlx-Tk-a8b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-6t-Juk">
+                                <rect key="frame" x="236" y="40" width="119" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sKZ-0n-1NJ">
+                                <rect key="frame" x="20" y="86.5" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-Qx-HVB">
+                                <rect key="frame" x="20" y="136.5" width="335" height="322"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="322" id="3kl-Pc-Tul"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-6t-1FC">
+                                <rect key="frame" x="36" y="558" width="71" height="30"/>
+                                <state key="normal" title="Отменить"/>
+                                <connections>
+                                    <action selector="pressButtonCancel:" destination="Qfv-9U-5Qm" eventType="touchUpInside" id="cQD-w0-iJk"/>
+                                    <action selector="pressButtonChange:" destination="Qfv-9U-5Qm" eventType="touchUpInside" id="U3E-tM-wGc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6h-sV-QQs">
+                                <rect key="frame" x="229" y="478.5" width="110" height="30"/>
+                                <state key="normal" title="Изменить фото"/>
+                                <connections>
+                                    <action selector="pressButtonChange:" destination="Qfv-9U-5Qm" eventType="touchUpInside" id="3Si-5t-dWl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6u-b6-mva">
+                                <rect key="frame" x="262" y="558" width="77" height="30"/>
+                                <state key="normal" title="Сохранить"/>
+                                <connections>
+                                    <action selector="pressButtonSave:" destination="Qfv-9U-5Qm" eventType="touchUpInside" id="Hzw-Yz-CsC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fBV-6t-1FC" firstAttribute="leading" secondItem="xlx-Tk-a8b" secondAttribute="leadingMargin" constant="20" id="2md-eD-Ugo"/>
+                            <constraint firstItem="sKZ-0n-1NJ" firstAttribute="leading" secondItem="xlx-Tk-a8b" secondAttribute="leading" constant="20" id="3JL-Fm-xXZ"/>
+                            <constraint firstItem="vDI-Qx-HVB" firstAttribute="top" secondItem="sKZ-0n-1NJ" secondAttribute="bottom" constant="20" id="6zT-Sn-qmB"/>
+                            <constraint firstItem="D6h-sV-QQs" firstAttribute="top" secondItem="vDI-Qx-HVB" secondAttribute="bottom" constant="20" id="Aj9-we-DPI"/>
+                            <constraint firstItem="uUK-7d-sQh" firstAttribute="top" secondItem="I6u-b6-mva" secondAttribute="bottom" constant="30" id="EG2-bm-ePV"/>
+                            <constraint firstAttribute="trailing" secondItem="vDI-Qx-HVB" secondAttribute="trailing" constant="20" id="V3w-AC-N2a"/>
+                            <constraint firstItem="uUK-7d-sQh" firstAttribute="top" secondItem="fBV-6t-1FC" secondAttribute="bottom" constant="30" id="all-oY-5mE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D6h-sV-QQs" secondAttribute="trailing" constant="20" id="e7D-tE-eSw"/>
+                            <constraint firstItem="vDI-Qx-HVB" firstAttribute="leading" secondItem="xlx-Tk-a8b" secondAttribute="leading" constant="20" id="gJU-qv-eT8"/>
+                            <constraint firstItem="D6h-sV-QQs" firstAttribute="top" secondItem="vDI-Qx-HVB" secondAttribute="bottom" constant="20" id="h8L-Lf-BhF"/>
+                            <constraint firstAttribute="trailing" secondItem="sKZ-0n-1NJ" secondAttribute="trailing" constant="20" id="k5B-zb-Yxt"/>
+                            <constraint firstItem="bOE-6t-Juk" firstAttribute="top" secondItem="XKZ-wF-Rzs" secondAttribute="bottom" constant="20" id="mPF-T2-Jhg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I6u-b6-mva" secondAttribute="trailing" constant="20" id="mcd-Gy-oCn"/>
+                            <constraint firstItem="sKZ-0n-1NJ" firstAttribute="top" secondItem="bOE-6t-Juk" secondAttribute="bottom" constant="20" id="nw8-qh-LeG"/>
+                            <constraint firstAttribute="trailing" secondItem="bOE-6t-Juk" secondAttribute="trailing" constant="20" id="sLp-bN-usZ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="o64-el-zdq"/>
+                    <tabBarItem key="tabBarItem" tag="-12" title="Settings" id="o64-el-zdq"/>
+                    <connections>
+                        <outlet property="imagePhoto" destination="vDI-Qx-HVB" id="wgf-Gz-68a"/>
+                        <outlet property="inputLogin" destination="sKZ-0n-1NJ" id="QMl-QE-U4w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AY9-jG-FMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="1484"/>
+            <point key="canvasLocation" x="1198" y="1458"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fe2-zc-c31">
@@ -161,13 +224,16 @@
                     </tabBar>
                     <connections>
                         <segue destination="hjm-dB-HAR" kind="relationship" relationship="viewControllers" id="8Yn-gy-Q1q"/>
-                        <segue destination="Qfv-9U-5Qm" kind="relationship" relationship="viewControllers" id="Kea-hw-OfB"/>
                         <segue destination="wda-vm-b4x" kind="relationship" relationship="viewControllers" id="INc-wT-9uE"/>
+                        <segue destination="Qfv-9U-5Qm" kind="relationship" relationship="viewControllers" id="CeG-hk-dIa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAp-bZ-HTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="694"/>
+            <point key="canvasLocation" x="-161" y="692"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo" width="512" height="512"/>
+    </resources>
 </document>
