@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1230C9431EE9AAF400A4FF63 /* CUDetailCamView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1230C9421EE9AAF400A4FF63 /* CUDetailCamView.xib */; };
 		129209741EE0ACD100F9CCE0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129209731EE0ACD100F9CCE0 /* Login.storyboard */; };
 		12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9F63D1ED834B500BB4902 /* SMSViewController.swift */; };
 		12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */; };
@@ -14,6 +15,8 @@
 		12D2F4311EE9419300207311 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F4301EE9419300207311 /* SettingsViewController.swift */; };
 		12D2F4351EE943DF00207311 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F4341EE943DF00207311 /* Contacts.swift */; };
 		12D2F4381EE984F500207311 /* CUAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F4371EE984F500207311 /* CUAnnotationView.swift */; };
+		12D2F43A1EE98E6100207311 /* CUCamsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F4391EE98E6100207311 /* CUCamsAnnotation.swift */; };
+		12D2F43E1EE9954700207311 /* CUDetailCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F43D1EE9954700207311 /* CUDetailCamView.swift */; };
 		12F7B6B51ED75A0400B877A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */; };
 		12F7B6B71ED75A0400B877A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F7B6B61ED75A0400B877A0 /* LoginViewController.swift */; };
 		12F7B6BA1ED75A0400B877A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F7B6B81ED75A0400B877A0 /* Main.storyboard */; };
@@ -28,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1230C9421EE9AAF400A4FF63 /* CUDetailCamView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CUDetailCamView.xib; sourceTree = "<group>"; };
 		129209731EE0ACD100F9CCE0 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		12C9F63D1ED834B500BB4902 /* SMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSViewController.swift; sourceTree = "<group>"; };
 		12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 		12D2F4301EE9419300207311 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		12D2F4341EE943DF00207311 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		12D2F4371EE984F500207311 /* CUAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUAnnotationView.swift; sourceTree = "<group>"; };
+		12D2F4391EE98E6100207311 /* CUCamsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUCamsAnnotation.swift; sourceTree = "<group>"; };
+		12D2F43D1EE9954700207311 /* CUDetailCamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUDetailCamView.swift; sourceTree = "<group>"; };
 		12F7B6B11ED75A0400B877A0 /* WhereMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F7B6B41ED75A0400B877A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F7B6B61ED75A0400B877A0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 				12F7B6B81ED75A0400B877A0 /* Main.storyboard */,
 				12F7B6BD1ED75A0400B877A0 /* LaunchScreen.storyboard */,
 				129209731EE0ACD100F9CCE0 /* Login.storyboard */,
+				1230C9421EE9AAF400A4FF63 /* CUDetailCamView.xib */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -125,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				12D2F4371EE984F500207311 /* CUAnnotationView.swift */,
+				12D2F4391EE98E6100207311 /* CUCamsAnnotation.swift */,
+				12D2F43D1EE9954700207311 /* CUDetailCamView.swift */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 			files = (
 				12F7B6BF1ED75A0400B877A0 /* LaunchScreen.storyboard in Resources */,
 				12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */,
+				1230C9431EE9AAF400A4FF63 /* CUDetailCamView.xib in Resources */,
 				12F7B6BC1ED75A0400B877A0 /* Assets.xcassets in Resources */,
 				129209741EE0ACD100F9CCE0 /* Login.storyboard in Resources */,
 				12F7B6BA1ED75A0400B877A0 /* Main.storyboard in Resources */,
@@ -323,7 +333,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F7B6CA1ED75E3F00B877A0 /* Person.swift in Sources */,
+				12D2F43E1EE9954700207311 /* CUDetailCamView.swift in Sources */,
 				12FCF13D1EE70FB100A4A530 /* Utils.swift in Sources */,
+				12D2F43A1EE98E6100207311 /* CUCamsAnnotation.swift in Sources */,
 				12D2F42F1EE85C3200207311 /* ContTableViewController.swift in Sources */,
 				12D2F4381EE984F500207311 /* CUAnnotationView.swift in Sources */,
 				12D2F4311EE9419300207311 /* SettingsViewController.swift in Sources */,
