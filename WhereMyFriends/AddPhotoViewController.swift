@@ -40,6 +40,7 @@ class AddPhotoViewController: UIViewController {
     @IBAction func pressButtonNext(_ sender: UIButton) {
         var data:NSData = NSData()
         if let image = imagePhoto.image {
+            //компресию сделать больше
             data = UIImageJPEGRepresentation(image, 0.1)! as NSData
         }
         let base64String = data.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters)

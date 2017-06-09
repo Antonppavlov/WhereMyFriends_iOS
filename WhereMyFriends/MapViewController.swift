@@ -44,7 +44,7 @@ class MapViewController: UIViewController {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation { return nil }
         var annotationView = self.map?.dequeueReusableAnnotationView(withIdentifier: "Pin")
-        if annotationView == nil{
+        if annotationView == nil {
             annotationView = CUAnnotationView(annotation: annotation, reuseIdentifier: "Pin")
             annotationView?.canShowCallout = false
         }
@@ -55,18 +55,25 @@ class MapViewController: UIViewController {
     //
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if view.annotation is MKUserLocation { return }
+    
+//        let dummyLabel = UILabel()
+//        dummyLabel.text = "Abra_Kadabra"
+//        let size = dummyLabel.sizeattr
+//        
+        
+        
         let detailAnnotation = view.annotation as! MKPointAnnotation
-        let views = Bundle.main.loadNibNamed("CUDetailCamView", owner: nil, options: nil)
-        let detailtView = views?[0] as! CUDetailCamView
+        let detailtView = CUDetailCamView(frame: CGRect(x: 0, y: 0, width: 100, height: 70))
+        
         detailtView.address?.text = detailAnnotation.title
-        detailtView.number = detailAnnotation.subtitle
+        detailtView.labelDate?.text = detailAnnotation.subtitle
 //        detailtView.client = detailAnnotation.client
         let button = UIButton(frame: detailtView.address!.frame)
 //        button.addTarget(self, action: #selector(MapViewController.showStream(sender:)), for: .touchUpInside)
         detailtView.addSubview(button)
         detailtView.center = CGPoint(x: view.bounds.size.width / 2, y: -detailtView.bounds.size.height * 0.52)
         view.addSubview(detailtView)
-        mapView.setCenter((view.annotation?.coordinate)!, animated: true)
+        //mapView.setCenter((view.annotation?.coordinate)!, animated: true)
     }
     
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
@@ -97,17 +104,6 @@ class MapViewController: UIViewController {
         map.removeAnnotations(self.map.annotations)
         
         for person in listPersone{
-//          
-//            let point = CUCamsAnnotation(latitude: person.latitude, longitude: person.longitude)
-//
-//            point.title  = person.name
-//            point.subtitle = person.photo
-          //  point.client  = false
-            
-            
-            
-            
-            
             let objectMKAnnotation = MKPointAnnotation()
             objectMKAnnotation.title = person.name
             objectMKAnnotation.subtitle = person.phone
