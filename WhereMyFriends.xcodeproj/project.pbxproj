@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1230C9431EE9AAF400A4FF63 /* CUDetailCamView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1230C9421EE9AAF400A4FF63 /* CUDetailCamView.xib */; };
+		1277AF101EEB08F700EE9EF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1277AF0F1EEB08F700EE9EF8 /* MapKit.framework */; };
 		129209741EE0ACD100F9CCE0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129209731EE0ACD100F9CCE0 /* Login.storyboard */; };
 		12C9F63E1ED834B500BB4902 /* SMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9F63D1ED834B500BB4902 /* SMSViewController.swift */; };
 		12C9F6401ED866D400BB4902 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		1230C9421EE9AAF400A4FF63 /* CUDetailCamView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CUDetailCamView.xib; sourceTree = "<group>"; };
+		1277AF0F1EEB08F700EE9EF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		129209731EE0ACD100F9CCE0 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		12C9F63D1ED834B500BB4902 /* SMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSViewController.swift; sourceTree = "<group>"; };
 		12C9F63F1ED866D400BB4902 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1277AF101EEB08F700EE9EF8 /* MapKit.framework in Frameworks */,
 				F475D383DBD78A0A16B2FCBB /* Pods_WhereMyFriends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +203,7 @@
 		7E2279A17CC4DB0FFDAFB176 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1277AF0F1EEB08F700EE9EF8 /* MapKit.framework */,
 				E175310B6E8EEE95EFCF85EE /* Pods_WhereMyFriends.framework */,
 			);
 			name = Frameworks;
@@ -242,6 +246,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = W76ZQSY64Q;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -473,6 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76ZQSY64Q;
 				INFOPLIST_FILE = WhereMyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = su.bbrains.WhereMyFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76ZQSY64Q;
 				INFOPLIST_FILE = WhereMyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = su.bbrains.WhereMyFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -23,9 +23,9 @@ class CUDetailCamView: UIView {
     func setup() {
         view = loadViewFromNib()
         view.frame = bounds
-        view.layer.borderColor   = #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1).cgColor
-        view.layer.borderWidth   = 0.85
-        view.layer.cornerRadius  = view.frame.size.height / 2
+        view.layer.borderColor   = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1).cgColor
+        view.layer.borderWidth   = 0.35
+        view.layer.cornerRadius  = view.frame.size.height / 3
         view.layer.masksToBounds = true
         addSubview(view)
     }

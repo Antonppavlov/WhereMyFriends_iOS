@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-
+import PhoneNumberKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var inputLogin: UITextField!
@@ -18,16 +18,31 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let phoneNumberKit = PhoneNumberKit()
+//        var phoneNumber:PhoneNumber?
+//        
+//        do {
+//            phoneNumber = try phoneNumberKit.parse(inputPassword.text!, withRegion: "UA", ignoreType: true)                   }
+//        catch {
+//            print("Generic parser error")
+//        }
+     //   print(phoneNumber?.adjustedNationalNumber() ?? <#default value#>)
+       // print(phoneNumber?.numberString)
+        // print((phoneNumber?.adjustedNationalNumber())!)
+       // print(phoneNumber?.countryCode.description)
+       // print(phoneNumber?.nationalNumber.description)
+        
+        let number = format(phoneNumber: inputPassword.text!)
+        print(inputPassword.text!)
+        print(number)
         storage.save(login: inputLogin.text!)
-        storage.save(phone: inputPassword.text!)
+        storage.save(phone: number)
     }
 
 }

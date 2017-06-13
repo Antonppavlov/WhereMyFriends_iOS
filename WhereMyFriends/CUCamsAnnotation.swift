@@ -10,13 +10,8 @@ import Foundation
 import MapKit
 
 
-class CUCamsAnnotation {
+class CUCamsAnnotation : MKPointAnnotation {
 
-//    var coordinate: CLLocationCoordinate2D
-//    var title: String?
-//    var subtitle: String?
-////    init(latitude: Double, longitude: Double) {
-////        super.coordinate.latitude = latitude
-////        super  .coordinate.longitude = longitude
-////    }
+    var image:UIImage?
+    
 }

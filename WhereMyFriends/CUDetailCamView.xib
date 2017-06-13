@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,26 +20,24 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleAspectFit" id="xmY-wz-0i7">
-            <rect key="frame" x="0.0" y="0.0" width="137" height="52"/>
+            <rect key="frame" x="0.0" y="0.0" width="118" height="40"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="8xe-bW-YjQ">
-                    <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friend" translatesAutoresizingMaskIntoConstraints="NO" id="8xe-bW-YjQ">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="8xe-bW-YjQ" secondAttribute="height" multiplier="1:1" id="j0L-R3-tDR"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Labeld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AT0-HR-rJE">
-                    <rect key="frame" x="54" y="26" width="35.5" height="13.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="+0000000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AT0-HR-rJE">
+                    <rect key="frame" x="41" y="19" width="71" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljQ-Or-IjZ">
-                    <rect key="frame" x="54" y="8" width="29" height="12.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljQ-Or-IjZ">
+                    <rect key="frame" x="41" y="9" width="28" height="9"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -46,15 +45,21 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="8xe-bW-YjQ" secondAttribute="bottom" id="0ou-Mb-0vh"/>
+                <constraint firstItem="AT0-HR-rJE" firstAttribute="top" secondItem="ljQ-Or-IjZ" secondAttribute="bottom" constant="1" id="1El-RO-MpC"/>
+                <constraint firstItem="AT0-HR-rJE" firstAttribute="leading" secondItem="8xe-bW-YjQ" secondAttribute="trailing" constant="1" id="6aj-d5-XYF"/>
+                <constraint firstItem="ljQ-Or-IjZ" firstAttribute="top" secondItem="xmY-wz-0i7" secondAttribute="topMargin" constant="1" id="LNd-5V-QSa"/>
                 <constraint firstItem="8xe-bW-YjQ" firstAttribute="leading" secondItem="xmY-wz-0i7" secondAttribute="leading" id="NbE-pF-YiJ"/>
+                <constraint firstAttribute="bottomMargin" secondItem="AT0-HR-rJE" secondAttribute="bottom" constant="1" id="YPf-PM-7Lf"/>
+                <constraint firstItem="AT0-HR-rJE" firstAttribute="top" secondItem="ljQ-Or-IjZ" secondAttribute="bottom" constant="1" id="jFf-JS-IhZ"/>
+                <constraint firstItem="ljQ-Or-IjZ" firstAttribute="leading" secondItem="8xe-bW-YjQ" secondAttribute="trailing" constant="1" id="nrn-AS-lJC"/>
                 <constraint firstItem="8xe-bW-YjQ" firstAttribute="top" secondItem="xmY-wz-0i7" secondAttribute="top" id="vTO-bT-FTM"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-73.5" y="158"/>
+            <point key="canvasLocation" x="-74" y="158"/>
         </view>
     </objects>
     <resources>
-        <image name="photo" width="512" height="512"/>
+        <image name="friend" width="50" height="50"/>
     </resources>
 </document>

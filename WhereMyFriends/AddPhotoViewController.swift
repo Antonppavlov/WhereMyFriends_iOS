@@ -41,7 +41,7 @@ class AddPhotoViewController: UIViewController {
         var data:NSData = NSData()
         if let image = imagePhoto.image {
             //компресию сделать больше
-            data = UIImageJPEGRepresentation(image, 0.1)! as NSData
+            data = UIImageJPEGRepresentation(image, 0.01)! as NSData
         }
         let base64String = data.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters)
         LoginStorage().save(photo: base64String)
