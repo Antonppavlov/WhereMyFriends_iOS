@@ -136,13 +136,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-Qx-HVB">
-                                <rect key="frame" x="20" y="180.5" width="335" height="322"/>
+                                <rect key="frame" x="20" y="168" width="335" height="219"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="322" id="3kl-Pc-Tul"/>
+                                    <constraint firstAttribute="height" constant="219" id="3kl-Pc-Tul"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6h-sV-QQs">
-                                <rect key="frame" x="229" y="522.5" width="110" height="30"/>
+                                <rect key="frame" x="236" y="395" width="110" height="30"/>
                                 <state key="normal" title="Изменить фото"/>
                                 <connections>
                                     <action selector="pressButtonChange:" destination="Qfv-9U-5Qm" eventType="touchUpInside" id="3Si-5t-dWl"/>
@@ -152,12 +152,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sKZ-0n-1NJ" firstAttribute="leading" secondItem="xlx-Tk-a8b" secondAttribute="leading" constant="20" id="3JL-Fm-xXZ"/>
-                            <constraint firstItem="vDI-Qx-HVB" firstAttribute="top" secondItem="sKZ-0n-1NJ" secondAttribute="bottom" constant="20" id="6zT-Sn-qmB"/>
-                            <constraint firstItem="D6h-sV-QQs" firstAttribute="top" secondItem="vDI-Qx-HVB" secondAttribute="bottom" constant="20" id="Aj9-we-DPI"/>
+                            <constraint firstItem="vDI-Qx-HVB" firstAttribute="top" secondItem="sKZ-0n-1NJ" secondAttribute="bottom" constant="7.5" id="6zT-Sn-qmB"/>
+                            <constraint firstItem="D6h-sV-QQs" firstAttribute="top" secondItem="vDI-Qx-HVB" secondAttribute="bottom" constant="8" id="Aj9-we-DPI"/>
                             <constraint firstAttribute="trailing" secondItem="vDI-Qx-HVB" secondAttribute="trailing" constant="20" id="V3w-AC-N2a"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="D6h-sV-QQs" secondAttribute="trailing" constant="20" id="e7D-tE-eSw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D6h-sV-QQs" secondAttribute="trailing" constant="13" id="e7D-tE-eSw"/>
                             <constraint firstItem="vDI-Qx-HVB" firstAttribute="leading" secondItem="xlx-Tk-a8b" secondAttribute="leading" constant="20" id="gJU-qv-eT8"/>
-                            <constraint firstItem="D6h-sV-QQs" firstAttribute="top" secondItem="vDI-Qx-HVB" secondAttribute="bottom" constant="20" id="h8L-Lf-BhF"/>
+                            <constraint firstItem="D6h-sV-QQs" firstAttribute="top" secondItem="vDI-Qx-HVB" secondAttribute="bottom" constant="8" id="h8L-Lf-BhF"/>
                             <constraint firstAttribute="trailing" secondItem="sKZ-0n-1NJ" secondAttribute="trailing" constant="20" id="k5B-zb-Yxt"/>
                             <constraint firstItem="bOE-6t-Juk" firstAttribute="top" secondItem="XKZ-wF-Rzs" secondAttribute="bottom" constant="20" id="mPF-T2-Jhg"/>
                             <constraint firstItem="sKZ-0n-1NJ" firstAttribute="top" secondItem="bOE-6t-Juk" secondAttribute="bottom" constant="20" id="nw8-qh-LeG"/>

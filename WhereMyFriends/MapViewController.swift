@@ -9,10 +9,12 @@ import UIKit
 import Foundation
 import MapKit
 import Firebase
-import PhoneNumberKit
+//import PhoneNumberKit
 
 class MapViewController: UIViewController {
     
+    var latitude:CLLocationDegrees?
+    var longitude:CLLocationDegrees?
    
     @IBOutlet weak var labelPhone: UILabel!
     @IBOutlet weak var map: MKMapView! {
@@ -231,8 +233,7 @@ class MapViewController: UIViewController {
         }
     }
 
-    var latitude:CLLocationDegrees?
-    var longitude:CLLocationDegrees?
+
     
 }
 
@@ -242,7 +243,7 @@ extension MapViewController: MKMapViewDelegate {
    
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        let phoneNumberKit = PhoneNumberKit()
+//        let phoneNumberKit = PhoneNumberKit()
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         

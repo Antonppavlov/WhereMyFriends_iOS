@@ -8,11 +8,12 @@
 
 import UIKit
 import Foundation
-import PhoneNumberKit
+import NKVPhonePicker
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var inputLogin: UITextField!
-    @IBOutlet weak var inputPassword: UITextField!
+    @IBOutlet weak var inputPassword: NKVPhonePickerTextField!
     
     let storage = LoginStorage()
     
@@ -24,19 +25,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let phoneNumberKit = PhoneNumberKit()
-//        var phoneNumber:PhoneNumber?
-//        
-//        do {
-//            phoneNumber = try phoneNumberKit.parse(inputPassword.text!, withRegion: "UA", ignoreType: true)                   }
-//        catch {
-//            print("Generic parser error")
-//        }
-     //   print(phoneNumber?.adjustedNationalNumber() ?? <#default value#>)
-       // print(phoneNumber?.numberString)
-        // print((phoneNumber?.adjustedNationalNumber())!)
-       // print(phoneNumber?.countryCode.description)
-       // print(phoneNumber?.nationalNumber.description)
         
         let number = format(phoneNumber: inputPassword.text!)
         print(inputPassword.text!)
